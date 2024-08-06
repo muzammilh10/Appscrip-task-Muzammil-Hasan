@@ -30,7 +30,6 @@ a:hover {
     font-family: "Merriweather", serif;
     font-size: 1.375rem;
     padding-bottom: 0.625rem;
-    margin-right: 12rem;
 }
 
 /* Sticks footer to bottom */
@@ -43,12 +42,41 @@ body {
 .container {
     flex: 1;
 }
+.main-width2{
+    width: 40%;
+}
+
+.main-width1{
+ width: 60%;
+}
 
 /* Footer main */
 .ft-main {
     padding: 1.25rem 1.875rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /* gap: 7rem; */
+}
+
+.ft-about-item{
+    width: 30rem;
+}
+
+.inputBox{
+    background: white;
+    width:15rem
+ }
+.ft-About {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 1.25rem 1.875rem;
+}
+
+
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 6.5rem;
 }
 
 @media only screen and (min-width: 29.8125rem
@@ -67,23 +95,16 @@ body {
     /* 1240px */
 ) {
     .ft-main {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .ft-About {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 }
 
-.ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem;
-}
-
-.ft-About {
+.ft-nested-item{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 1.25rem 1.875rem;
 }
 
@@ -100,7 +121,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    background-color: #00d188;
+    background-color: #000000;
     color: #fff;
     cursor: pointer;
     border: 0;
@@ -111,13 +132,23 @@ input[type="submit"] {
 /* Footer social */
 .ft-social {
     padding: 1.25rem;
-    min-width: 12.5rem;
+    min-width: 6.5rem;
 }
 
+.formSubmit{
+    margin-top: 3rem;
+}
+
+.ft-currency{
+    margin-top: 1rem;
+}
+#ft-detail{
+    font-size: 11px;
+}
 .ft-social-list {
     display: flex;
-    justify-content: center;
-    padding-top: 1.25rem;
+    justify-content: left;
+    padding-bottom: 24px
 }
 
 .ft-social-list li {
