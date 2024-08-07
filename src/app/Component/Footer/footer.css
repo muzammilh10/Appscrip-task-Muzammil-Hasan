@@ -3,6 +3,8 @@
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
+    top: 0;
+    left: 0;
 }
 
 ul {
@@ -34,9 +36,9 @@ a:hover {
 
 /* Sticks footer to bottom */
 body {
-    display: flex;
+    /* display: flex; */
     min-height: 100vh;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .container {
@@ -158,8 +160,8 @@ input[type="submit"] {
 
 /* Footer legal */
 .ft-legal {
-    padding: 0.9375rem 1.875rem;
-    background-color: #333;
+    /* padding: 0.9375rem 1.875rem; */
+    background-color: #000000;
 }
 
 .ft-legal-list {
@@ -170,7 +172,7 @@ input[type="submit"] {
 }
 
 .ft-legal-list li {
-    margin: 0.125rem 0.625rem;
+    /* margin: 0.125rem 0.625rem; */
     white-space: nowrap;
 }
 

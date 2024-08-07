@@ -1,0 +1,88 @@
+/* styles/sidebar.css */
+.page-wrapper {
+  width: 250px;
+  /* Adjust width as needed */
+  height: auto;
+  
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  overflow-y: auto;
+  /* Scroll if content overflows */
+}
+
+.page-wrapper.toggled #sidebar {
+  margin-left: 0;
+}
+
+.sidebar-wrapper {
+  width: 250px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: margin 0.3s ease;
+  margin-left: 5%;
+}
+
+.sidebar-dropdown {
+  /* background: #686666; */
+  border-bottom: 1px solid rgb(208, 205, 205);
+}
+
+.sidebar-brand {
+  padding: 19px 0px;
+  border-bottom: 1px solid rgb(208, 205, 205);
+  ;
+}
+
+.sidebar-brand label {
+  margin-left: 15px;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu ul li {
+  position: relative;
+}
+
+.sidebar-menu ul li label {
+  display: flex;
+  margin-left: 6%;
+  /* padding: 36px; */
+  /* margin-bottom: 26%; */
+  flex-direction: row;
+  /* margin-left: 5px; */
+  margin-bottom: 6%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-menu ul li a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  padding: 15px;
+
+}
+
+.sidebar-menu ul li.active .sidebar-submenu {
+  display: block;
+}
+
+.sidebar-submenu {
+  display: none;
+}
+
+.sidebar-submenu.show {
+  display: block;
+}
