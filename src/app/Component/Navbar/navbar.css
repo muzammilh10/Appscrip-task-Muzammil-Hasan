@@ -48,11 +48,18 @@ main {
 .navbarMenu {
     list-style: none;
     display: flex;
-    margin-top: 34px;
+    margin-top: 63px;
     justify-content: center;
     text-wrap: nowrap;
     position: absolute;
-    width: 100px;
+    width: 173px;
+}
+
+.highlightDetail{
+    background-color: #000000;
+    color: red;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .navbarMenu li a {
@@ -117,7 +124,9 @@ main {
     color: black;
     text-decoration: none;
     margin-left: 30px;
-    font-size: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    align-content: center;
 }
 
 

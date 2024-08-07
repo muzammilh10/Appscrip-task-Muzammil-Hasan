@@ -13,6 +13,12 @@ export default function Navbar() {
 
     return (
         <>
+            <div className='highlightDetail'>
+                <div>Lorem ipsum dolor</div>
+                <div> Lorem ipsum dolor</div>
+                <div> Lorem ipsum dolor</div>
+
+            </div>
             <div className="navigation">
                 <div className="logo">
                     <img src='./Vector.png' />
@@ -62,7 +68,7 @@ export default function Navbar() {
                     <a href="#" className="navigation-link">
                         {/* <FontAwesomeIcon icon={faGreaterThan} rotation={90} />
                          */}
-                        <div className='arrow-Left'>ENG  <img src='./arrow-left.png' /></div> 
+                        <div className='arrow-Left'>ENG  <img src='./arrow-left.png' /></div>
 
                         {/* <i className="far fa-user-circle"></i> */}
                     </a>
