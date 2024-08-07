@@ -15,7 +15,7 @@ const CardDetail = () => {
               <div className="card_image"><img src={"https://picsum.photos/500/300/?image=10"} /></div>
               <div className="card_content">
                 <h2 className="card_title">Card Grid Layout</h2>
-
+                <p>Sign in or Create an account to see pricing</p>
               </div>
             </div>
           </li>
@@ -24,7 +24,7 @@ const CardDetail = () => {
               <div className="card_image"><img src={"https://picsum.photos/500/300/?image=5"} /></div>
               <div className="card_content">
                 <h2 className="card_title">Card Grid Layout</h2>
-
+                <p>Sign in or Create an account to see pricing</p>
               </div>
             </div>
           </li>
@@ -33,7 +33,7 @@ const CardDetail = () => {
               <div className="card_image"><img src={"https://picsum.photos/500/300/?image=11"} /></div>
               <div className="card_content">
                 <h2 className="card_title">Card Grid Layout</h2>
-
+                <p>Sign in or Create an account to see pricing</p>
               </div>
             </div>
           </li>
@@ -42,6 +42,7 @@ const CardDetail = () => {
               <div className="card_image"><img src={"https://picsum.photos/500/300/?image=14"} /></div>
               <div className="card_content">
                 <h2 className="card_title">Card Grid Layout</h2>
+                <p>Sign in or Create an account to see pricing</p>
 
               </div>
             </div>

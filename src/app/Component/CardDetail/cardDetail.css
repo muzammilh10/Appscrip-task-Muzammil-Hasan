@@ -89,6 +89,10 @@ img {
   text-align: center;
 }
 
+.card_content p {
+  margin-top: 5px;
+  font-size: 11px;
+}
 
 
 .cardDetail {
