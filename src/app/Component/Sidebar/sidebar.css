@@ -1,9 +1,6 @@
 /* styles/sidebar.css */
 .page-wrapper {
-  width: 250px;
-  /* Adjust width as needed */
   height: auto;
-  
   top: 0;
   left: 0;
   background-color: #ffffff;
@@ -85,4 +82,12 @@
 
 .sidebar-submenu.show {
   display: block;
+}
+
+
+@media width and (max-width:1024) {
+  .intro {
+    padding: 4% 19%;
+
+  }
 }

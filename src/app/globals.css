@@ -21,7 +21,7 @@
   width: 100%;
   position: relative;
   height: 50px;
-  padding: 0 4%;
+  padding: 0 7%;
   padding-top: 12px;
   border: 1px solid #ccc;
   display: flex;
@@ -30,7 +30,7 @@
 
 .left {
   display: flex;
-  gap: 13rem;
+  gap: 5rem;
   justify-content: space-between;
 }
 
@@ -141,4 +141,11 @@
 .booking__btn a:hover {
   background: #43a82a;
   color: #ffffff;
+}
+
+@media (max-width: 1240px) {
+
+  .intro {
+    padding: 4% 12%;
+  }
 }
