@@ -181,8 +181,35 @@ img {
 
 }
 
-@media (max-width:425) {
+@media screen and (max-width:425px) {
   .cards {
     margin: auto;
+  }
+
+  .card_title {
+    margin: 0;
+    font-weight: 800;
+    font-size: .8rem;
+  }
+
+  .main{
+    padding: 0;
+  }
+
+  .cards_item {
+    width: 50%;
+    padding: 0;
+    padding-right: 7px;
+  }
+
+  .main ul {
+    width: auto;
+  }
+
+
+  .card_image img {
+    width: 113%;
+    height: 214px;
+    object-fit: cover;
   }
 }

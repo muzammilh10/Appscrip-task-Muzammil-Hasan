@@ -165,6 +165,10 @@ input[type="submit"] {
     margin-top: 3rem;
 }
 
+.mt-title {
+    display: none;
+}
+
 .ft-currency {
     margin-top: 1rem;
 }
@@ -229,17 +233,24 @@ input[type="submit"] {
 }
 
 @media (max-width: 425px) {
-    
+
     .ft-About {
         display: block;
     }
 
     .main-width1 {
         display: block;
+        border-bottom: 2px solid;
     }
 
     .ft-main {
         display: block;
+        margin: 0 5%;
+        border: 0;
+    }
+
+    .formSubmit {
+        margin-top: 1rem;
     }
 
     .ft-legal {
@@ -250,11 +261,104 @@ input[type="submit"] {
         width: 150px;
     }
 
-    ul {
-        width: 300px;
+    .ft-currency {
+        margin-bottom: 5px;
     }
 
-    .ft-about-item{
+    ul {
+        width: 256px;
+    }
+
+    .ft-about-item {
         width: 250px;
     }
+
+    .main-width1 {
+        width: 95%;
+    }
+
+
+    .ft-main-item {
+        padding: 17px 0px 22px 2px;
+        min-width: 6.5rem;
+
+    }
+
+    form {
+        display: flex;
+        gap: 20px;
+        flex-flow: nowrap;
+    }
+
+    input[type="submit"] {
+        width: 25%;
+    }
+
+    .ft-contact {
+        display: none;
+    }
+
+    .mt-title {
+        display: block;
+        display: block;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+
+    .main-width2 ul {
+        display: flex;
+        gap: 21px;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 11px;
+        width: 365px;
+        border-bottom: 2px solid;
+        padding-bottom: 17px;
+    }
+
+    .main-width3 {
+        width: 66%;
+    }
+
+    .paymentMethod {
+        margin-left: 4px;
+        width: 271px;
+    }
+
+    .paymentMethod img {
+        width: 36px;
+        height: 27px;
+    }
+
+    .ft-About {
+        margin-top: -33px;
+        margin-left: 4%;
+        padding: 1.25rem 0;
+    }
+
+
+    .ft-nested-item {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-width2 ul {
+        width: 315px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-width2 ul {
+        width: 265px;
+    }
+}
+
+#ft-detail {
+    display: none;
 }

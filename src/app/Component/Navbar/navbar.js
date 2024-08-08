@@ -8,9 +8,9 @@ export default function Navbar() {
     return (
         <>
             <div className='highlightDetail'>
-                <div>Lorem ipsum dolor</div>
-                <div> Lorem ipsum dolor</div>
-                <div> Lorem ipsum dolor</div>
+                <div className='text1'>Lorem ipsum dolor</div>
+                <div className='text2'> Lorem ipsum dolor</div>
+                <div> Lorem isum dolor</div>
 
             </div>
             <div className="navigation">

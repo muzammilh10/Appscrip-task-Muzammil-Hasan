@@ -160,7 +160,7 @@ main {
     display: none;
 }
 
-.mobileView{
+.mobileView {
     display: none;
 }
 
@@ -205,38 +205,46 @@ main {
         display: none;
     }
 
-    .logoName{
+    .logoName {
         display: block;
+    }
+
+    .text1 {
+        display: none;
+    }
+    
+    .text2 {
+        display: none;
     }
 
     .arrow-Left {
         display: none;
     }
 
-    .mobileView{
+    .mobileView {
         font-weight: 700;
         font-size: 22px;
         display: block;
     }
 
     .navigation {
-        padding: 25px 39px;
-        padding-right: 2px;
+        padding: 25px 12px;
+        padding-right: 0px;
         padding-bottom: 0;
         height: 77px;
     }
-    
-    
+
+
     .logo {
         display: flex;
     }
-    
+
     .logo img {
         margin-top: 0px;
         height: 26px;
         width: 26px;
     }
-    
+
     .navbar {
         display: flex;
         height: 47px !important;
@@ -245,4 +253,3 @@ main {
         top: -9px;
     }
 }
-

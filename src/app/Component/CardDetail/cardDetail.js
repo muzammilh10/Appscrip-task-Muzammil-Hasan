@@ -1,9 +1,5 @@
 import React from 'react';
 import './cardDetail.css';
-import { useState } from "react";
-
-
-
 import SideBar from '../Sidebar/Sidebar'
 
 const CardDetail = ({sidebar}) => {
@@ -17,7 +13,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Group 136332.png"} /> </div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <p>Sign in or Create an account to see pricing</p>
               </div>
             </div>
@@ -26,7 +22,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Group 136349.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <p>Sign in or Create an account to see pricing</p>
               </div>
             </div>
@@ -35,7 +31,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Group 136359.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <p>Sign in or Create an account to see pricing</p>
               </div>
             </div>
@@ -44,7 +40,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Front Pic.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <p>Sign in or Create an account to see pricing</p>
 
               </div>
@@ -54,7 +50,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Front Pic.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
 
               </div>
             </div>
@@ -63,7 +59,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Front Pic.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <div className='detail'>
                   <p>Sign in or Create an account to see pricing </p>
                 </div>
@@ -75,7 +71,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={'./Group 136359.png'} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <div className='detail'>
                   <p>Sign in or Create an account to see pricing </p>
                 </div>
@@ -87,7 +83,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Front Pic.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <div className='detail'>
                   <p>Sign in or Create an account to see pricing </p>
                 </div>
@@ -98,7 +94,7 @@ const CardDetail = ({sidebar}) => {
             <div className="card">
               <div className="card_image"><img src={"./Group 136359.png"} /></div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
+                <h2 className="card_title">PRODUCT NAME</h2>
                 <div className='detail'>
                   <p>Sign in or Create an account to see pricing </p>
                 </div>
