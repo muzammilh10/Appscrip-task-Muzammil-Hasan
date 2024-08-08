@@ -2,7 +2,11 @@ import React from 'react';
 import './cardDetail.css';
 import SidebarFilter from '../Sidebar/Sidebar.js'
 
-const CardDetail = ({sidebar}) => {
+interface CardDetailProps {
+  sidebar?: boolean; 
+}
+
+const CardDetail: React.FC<CardDetailProps> = ({ sidebar }) => {
 
   return (
     <div className='cardDetail'>
