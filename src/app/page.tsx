@@ -1,6 +1,6 @@
 'use client'
-import Footer from "./Component/Footer/Footer.js";
-import Navbar from './Component/Navbar/Navbar.js'
+import Footer from './Component/Footer/Footer.js';
+import Navbar from './Component/Navbar/Navbar.js';
 import CardDetail from './Component/CardDetail/cardDetail.js'
 
 import './globals.css'
