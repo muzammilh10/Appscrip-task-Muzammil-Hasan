@@ -1,7 +1,7 @@
 'use client'
-import Footer from './Component/Footer/Footer.js';
-import Navbar from './Component/Navbar/Navbar.js';
-import CardDetail from './Component/CardDetail/cardDetail.js'
+import Footer from './Component/Footer/Footer';
+import Navbar from './Component/Navbar/Navbar';
+import CardDetail from './Component/CardDetail/cardDetail'
 
 import './globals.css'
 import { useState } from "react";

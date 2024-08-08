@@ -1,6 +1,6 @@
 import React from 'react';
 import './cardDetail.css';
-import SidebarFilter from '../Sidebar/Sidebar.js'
+import SidebarFilter from '../Sidebar/Sidebar'
 
 interface CardDetailProps {
   sidebar?: boolean; 
