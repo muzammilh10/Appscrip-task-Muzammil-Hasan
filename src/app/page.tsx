@@ -1,11 +1,9 @@
 'use client'
-import Footer from "./Component/Footer/footer";
-import Navbar from './Component/Navbar/navbar'
-import SideBar from './Component/Sidebar/Sidebar'
-import CardDetail from './Component/CardDetail/cardDetail'
+import Footer from "./Component/Footer/Footer.js";
+import Navbar from './Component/Navbar/Navbar.js'
+import CardDetail from './Component/CardDetail/cardDetail.js'
 
 import './globals.css'
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {

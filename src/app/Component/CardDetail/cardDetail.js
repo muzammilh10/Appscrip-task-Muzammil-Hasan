@@ -1,12 +1,12 @@
 import React from 'react';
 import './cardDetail.css';
-import SideBar from '../Sidebar/Sidebar'
+import SidebarFilter from '../Sidebar/Sidebar.js'
 
 const CardDetail = ({sidebar}) => {
 
   return (
     <div className='cardDetail'>
-      {sidebar && <SideBar />}
+      {sidebar && <SidebarFilter />}
       <div className="main">
         <ul className="cards">
           <li className="cards_item">
