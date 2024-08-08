@@ -66,6 +66,11 @@ main {
     justify-content: space-evenly;
 }
 
+
+.navbar {
+    display: none;
+}
+
 .navbarMenu li a {
     text-decoration: none;
     margin-left: 25px;
@@ -155,6 +160,10 @@ main {
     display: none;
 }
 
+.mobileView{
+    display: none;
+}
+
 .notification-bubble {
     user-select: none;
     -moz-user-select: none;
@@ -190,3 +199,50 @@ main {
     }
 
 }
+
+@media screen and (max-width:425px) {
+    .profileImage {
+        display: none;
+    }
+
+    .logoName{
+        display: block;
+    }
+
+    .arrow-Left {
+        display: none;
+    }
+
+    .mobileView{
+        font-weight: 700;
+        font-size: 22px;
+        display: block;
+    }
+
+    .navigation {
+        padding: 25px 39px;
+        padding-right: 2px;
+        padding-bottom: 0;
+        height: 77px;
+    }
+    
+    
+    .logo {
+        display: flex;
+    }
+    
+    .logo img {
+        margin-top: 0px;
+        height: 26px;
+        width: 26px;
+    }
+    
+    .navbar {
+        display: flex;
+        height: 47px !important;
+        width: 43px !important;
+        position: relative;
+        top: -9px;
+    }
+}
+

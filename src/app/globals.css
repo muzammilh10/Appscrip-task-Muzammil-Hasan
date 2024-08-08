@@ -171,6 +171,22 @@
 
 @media (max-width: 1240px) {
   .intro {
-    padding: 4% 12%;
+    padding: 4% 7%;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .left-value1 {
+    display: none;
+  }
+
+  .intro h1 {
+    padding: 3% 0%;
+    font-size: 23px;
+  }
+
+  .intro p {
+    font-size: 15px;
   }
 }

@@ -178,4 +178,11 @@ img {
   .cards_item {
     width: 25%;
   }
+
+}
+
+@media (max-width:425) {
+  .cards {
+    margin: auto;
+  }
 }

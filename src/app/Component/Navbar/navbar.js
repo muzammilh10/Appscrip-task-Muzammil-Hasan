@@ -14,9 +14,12 @@ export default function Navbar() {
 
             </div>
             <div className="navigation">
+                
                 <div className="logo">
+                    <img className='navbar' src='./navbar.webp'/>
                     <img src='./Vector.png' />
                 </div>
+                <div className='mobileView'>LOGO</div>
                 <div className="navigation-search-container">
                     <div className='logoName'>
                         LOGO
@@ -47,7 +50,7 @@ export default function Navbar() {
           
                     </a>
 
-                    <a href="#" className="navigation-link">
+                    <a href="#" className="navigation-link profileImage">
                         <img src='./profile.png' />
 
                     </a>
