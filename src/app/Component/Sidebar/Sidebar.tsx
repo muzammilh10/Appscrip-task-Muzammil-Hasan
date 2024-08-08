@@ -1,22 +1,17 @@
 // components/SidebarFilter.js
 'use client'
 import React, { useState } from 'react';
-import './Sidebar.css';
+import './sidebar.css';
 
 const SidebarFilter = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [sidebarToggled, setSidebarToggled] = useState(false);
-
-  const handleSidebarToggle = () => {
-    setSidebarToggled(!sidebarToggled);
-  };
 
   const handleDropdownClick = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
   return (
-    <div className={`page-wrapper chiller-theme ${sidebarToggled ? 'toggled' : ''}`}>
+    <div className={`page-wrapper chiller-theme }`}>
 
       <nav id="sidebar" className="sidebar-wrapper">
         <div className="sidebar-content">
