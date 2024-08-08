@@ -3,9 +3,6 @@ import React from 'react'
 
 import "./Footer.css"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-
 
 export default function Footer() {
   // const navigate = useNavigate()
@@ -54,38 +51,48 @@ export default function Footer() {
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Stories</a></li>
                 <li><a href="#">Artisian</a></li>
-                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Boutiques</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li><a href="#">EU Compliances Docs</a></li>
               </ul>
             </div>
             <div className="ft-about-item">
               <h2 className="ft-title">QUICK LINKS</h2>
               <ul>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">eBooks</a></li>
-                <li><a href="#">Webinars</a></li>
+                <li><a href="#">Orders & Shipping</a></li>
+                <li><a href="#">Join/Login as a Seller</a></li>
+                <li><a href="#">Payment & Pricing</a></li>
+                <li><a href="#">WebinarsReturn & Refunds</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+
               </ul>
             </div>
           </div>
-          <div className='ft-main-item main-width2'>
+          <div className='ft-main-item main-width3'>
             <h2 className="ft-title">FOLLOW US</h2>
             <ul className="ft-social-list">
-              <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-              <li><a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+              <li><img src='./insta.png' /></li>
+              <li><img src='./linkedin.png' /></li>
             </ul>
-            <div>
-              <h1>mettā muse Accepts</h1>
+            <div className='paymentMethod'>
+              <h2>mettā muse Accepts</h2>
+              <div >
+                <img src='./gpay.png' />
+                <img src='./payment.png' />
+                <img src='./paypal.png' />
+                <img src='./amex.png' />
+                <img src='./appplepay.png' />
+                <img src='./pay.png' />
+              </div>
             </div>
           </div>
         </section>
 
-   
 
         <section className="ft-legal">
           <ul className="ft-legal-list">
-
-
             <li>&copy; Copyright © 2023 mettamuse. All rights reserved.</li>
           </ul>
         </section>

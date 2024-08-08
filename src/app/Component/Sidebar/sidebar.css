@@ -4,9 +4,7 @@
   top: 0;
   left: 0;
   background-color: #ffffff;
-
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-
+  width: 23%;
   overflow-y: auto;
   /* Scroll if content overflows */
 }
@@ -28,10 +26,14 @@
   border-bottom: 1px solid rgb(208, 205, 205);
 }
 
+.checkbox {
+  font-weight: 750;
+}
+
 .sidebar-brand {
   padding: 19px 0px;
   border-bottom: 1px solid rgb(208, 205, 205);
-  ;
+  width: 112%;
 }
 
 .sidebar-brand label {
@@ -41,6 +43,8 @@
 .sidebar-menu ul {
   list-style: none;
   padding: 0;
+  width: 90%;
+
 }
 
 .sidebar-menu ul li {
@@ -49,7 +53,8 @@
 
 .sidebar-menu ul li label {
   display: flex;
-  margin-left: 6%;
+  margin-left: 5%;
+  gap: 6px;
   /* padding: 36px; */
   /* margin-bottom: 26%; */
   flex-direction: row;
@@ -60,6 +65,7 @@
 .title {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .sidebar-menu ul li a {
@@ -69,7 +75,6 @@
   color: rgb(0, 0, 0);
   margin: auto;
   padding: 15px;
-
 }
 
 .sidebar-menu ul li.active .sidebar-submenu {

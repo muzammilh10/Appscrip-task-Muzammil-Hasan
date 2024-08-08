@@ -2,12 +2,6 @@ import React from 'react'
 import "./Navbar.css"
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
-import { faHeart, faUser } from '@fortawesome/free-regular-svg-icons'
-import { faBagShopping, faGreaterThan, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-
-
 export default function Navbar() {
 
 
@@ -41,37 +35,28 @@ export default function Navbar() {
                 <div className="navigation-icons">
                     <a href="#" className="navigation-link">
                         <img src='./search-normal.png' />
-                        {/* <FontAwesomeIcon icon={faMagnifyingGlass} className="fas fa-check"  style={{ color: "red", fontWeight: 200 }} /> */}
                     </a>
                     <a href="#" className="navigation-link">
-                        {/* <FontAwesomeIcon icon={faHeart} /> */}
                         <img src='./heart.png' />
 
-                        {/* <i className="far fa-user-circle"></i> */}
                     </a>
 
                     <a href="#" className="navigation-link">
                         <img src='./shopping-bag.png' />
 
-                        {/* <FontAwesomeIcon icon="fa-solid fa-coffee" size="xs" />
-                        <FontAwesomeIcon icon={faBagShopping} /> */}
-                        {/* <i className="far fa-user-circle"></i> */}
+          
                     </a>
 
                     <a href="#" className="navigation-link">
-                        {/* <FontAwesomeIcon icon={faUser} /> */}
                         <img src='./profile.png' />
 
-                        {/* <i className="far fa-user-circle"></i> */}
                     </a>
 
                     <a href="#" className="navigation-link">
-                        {/* <FontAwesomeIcon icon={faGreaterThan} rotation={90} />
-                         */}
+                         
                         <div className='arrow-Left'>ENG  <img src='./arrow-left.png' /></div>
 
-                        {/* <i className="far fa-user-circle"></i> */}
-                    </a>
+                   </a>
 
                 </div>
             </div>

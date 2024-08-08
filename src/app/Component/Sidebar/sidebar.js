@@ -22,37 +22,33 @@ const SidebarFilter = () => {
         <div className="sidebar-content">
           <div className="sidebar-brand">
             <label>
-              <input type='checkbox' /> CUSTOMIZABLE
+              <input type='checkbox' className='checkbox' /> CUSTOMIZABLE
             </label>
-            <div id="close-sidebar" onClick={handleSidebarToggle}>
-              <i className="fas fa-times"></i>
-            </div>
+
           </div>
           <div className="sidebar-menu">
             <ul>
               {['Dashboard New', 'E-commerce', 'Components', 'Charts', 'Maps'].map((item, index) => (
                 <li className={`sidebar-dropdown ${activeDropdown === index ? 'active' : ''}`} key={index}>
                   <a href="#" onClick={() => handleDropdownClick(index)}>
-                    <i className={`fa fa-${item.toLowerCase().replace(' ', '-')}`}></i>
                     <span className='title'>{item} <img src='./arrow-left.png' /></span>
                     <span>ALL</span>
-                    {item === 'E-commerce' && <span className="badge badge-pill badge-danger">3</span>}
                   </a>
                   <div className={`sidebar-submenu ${activeDropdown === index ? 'show' : ''}`}>
                     <ul>
                       <li>
                         <label>
-                          <input type="checkbox" /> Item 1
+                          <input type="checkbox" /> Men
                         </label>
                       </li>
                       <li>
                         <label>
-                          <input type="checkbox" /> Item 2
+                          <input type="checkbox" /> Women
                         </label>
                       </li>
                       <li>
                         <label>
-                          <input type="checkbox" /> Item 3
+                          <input type="checkbox" /> Baby & Kids
                         </label>
                       </li>
                     </ul>
