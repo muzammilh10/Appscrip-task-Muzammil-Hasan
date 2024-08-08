@@ -1,111 +1,43 @@
-import React from 'react';
+'use Client'
+import React, { useEffect, useState } from 'react';
 import './cardDetail.css';
 import SidebarFilter from '../Sidebar/Sidebar'
+import Image from 'next/image';
 
 interface CardDetailProps {
-  sidebar?: boolean; 
+  sidebar?: boolean;
 }
 
 const CardDetail: React.FC<CardDetailProps> = ({ sidebar }) => {
+  const [imageData, setImageData] = useState([])
+
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then(res => res.json())
+      .then(json => setImageData(json))
+  }, [])
 
   return (
     <div className='cardDetail'>
       {sidebar && <SidebarFilter />}
       <div className="main">
         <ul className="cards">
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Group 136332.png"} /> </div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <p>Sign in or Create an account to see pricing</p>
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Group 136349.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <p>Sign in or Create an account to see pricing</p>
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Group 136359.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <p>Sign in or Create an account to see pricing</p>
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Front Pic.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <p>Sign in or Create an account to see pricing</p>
-
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Front Pic.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Front Pic.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <div className='detail'>
-                  <p>Sign in or Create an account to see pricing </p>
-                </div>
-
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={'./Group 136359.png'} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <div className='detail'>
-                  <p>Sign in or Create an account to see pricing </p>
-                </div>
-
-              </div>
-            </div>
-          </li>
-          <li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Front Pic.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <div className='detail'>
-                  <p>Sign in or Create an account to see pricing </p>
-                </div>
-
-              </div>
-            </div>
-          </li><li className="cards_item">
-            <div className="card">
-              <div className="card_image"><img src={"./Group 136359.png"} /></div>
-              <div className="card_content">
-                <h2 className="card_title">PRODUCT NAME</h2>
-                <div className='detail'>
-                  <p>Sign in or Create an account to see pricing </p>
-                </div>
-              </div>
-            </div>
-          </li>
-
+          {imageData.map((item, index) => {
+            const { image, title, description } = item
+            return (
+              <>
+                <li key={index} className="cards_item">
+                  <div className="card">
+                    <div className="card_image"><Image src={image} alt={`image${index}`} width={500}
+                      height={500} /> </div>
+                    <div className="card_content">
+                      <h2 className="card_title">{title}</h2>
+                    </div>
+                  </div>
+                </li>
+              </>
+            )
+          })}
         </ul>
       </div>
     </div>
