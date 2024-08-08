@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import './sidebar.css';
 
 const SidebarFilter = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
 
-  const handleDropdownClick = (index) => {
+  const handleDropdownClick: (index: number) => void = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
